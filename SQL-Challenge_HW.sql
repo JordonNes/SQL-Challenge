@@ -1,13 +1,13 @@
 CREATE TABLE employees(
-	emp_no INT,
+	emp_no INT NOT NULL,
 	emp_title  VARCHAR (30) NOT NULL,
-	birth_date DATE,
+	birth_date DATE NOT NULL,
 	first_name  VARCHAR (30) NOT NULL,
 	last_name  VARCHAR (30) NOT NULL, 
-	sex VARCHAR (3),
+	sex VARCHAR (1),
 	hire_date DATE)
 SELECT * FROM employees;
-
+drop table employees
 
 CREATE TABLE departments(
 	dept_no  VARCHAR (6) NOT NULL,
